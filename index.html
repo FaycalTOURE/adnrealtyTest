@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./public/css/all.min.css" rel="stylesheet">
+    <title>Test intégration</title>
+</head>
+<body>
+    <main class="container py-6">
+        <div class="row row-eq-height">
+            <section class="bg-primary text-white rounded col-12 col-lg-6 col-xl-5 p-10">
+                <h1>Contactez-nous <span class="d-lg-block">et visualisez nos plans</span></h1>
+
+                <form action="" method="get" class="form-empty d-flex flex-column">
+                    <div class="my-5 ml-5">
+                        <span class="d-block text-14 mb-3">Civilité <sup>*</sup></span>
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label">
+                                <input class="form-check-input d-none" type="radio" name="civilite" id="civilite1" value="Madame" checked="checked">
+                                <span class="input-radio-mark d-inline-block align-middle mr-3"></span>
+                                Madame
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label">
+                                <input class="form-check-input d-none" type="radio" name="civilite" id="civilite2" value="Monsieur">
+                                <span class="input-radio-mark d-inline-block align-middle mr-3"></span>
+                                Monsieur
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="firstName" class="text-14 ml-5">Nom <sup>*</sup></label>
+                            <input type="text" class="form-control form-control-lg text-18 rounded" name="firstName" id="firstName" placeholder="Votre nom">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastName" class="text-14 ml-5">Prénom <sup>*</sup></label>
+                            <input type="text" class="form-control form-control-lg text-18 rounded" name="lastName" id="lastName" placeholder="Votre prénom">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="text-14 ml-5">Email <sup>*</sup></label>
+                        <input type="email" class="form-control form-control-lg text-18 rounded" nale="email" id="email" placeholder="Votre e-mail">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="phone" class="text-14 ml-5">Téléphone <sup>*</sup></label>
+                            <input type="text" class="form-control form-control-lg text-18 rounded" name="phone" id="phone" placeholder="Votre Téléphone">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="postalCode" class="text-14 ml-5">Code postal <sup>*</sup></label>
+                            <input type="text" class="form-control form-control-lg text-18 rounded" name="postalCode" id="postalCode" placeholder="Votre code postal">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="text-14 ml-5">Message <sup>*</sup></label>
+                        <textarea class="form-control form-control-lg text-18 rounded" name="message" id="message" rows="3" placeholder="Votre message"></textarea>
+                    </div>
+
+                    <div class="form-check form-check-inline d-flex align-items-start mb-5 pl-5 mr-0">
+                        <label class="form-check-label text-12">
+                            <input class="form-check-input d-none" type="checkbox" name="cgu" id="cgu" value="option1">
+                            <span class="input-checkbox-mark d-inline-block align-middle mb-3 mr-3"></span>
+                            En cochant cette case, je consens  à recevoir des offres commerciales et des informations sur
+                            les produits et services de Promoteurs &ndash; <a href="" class="text-white">Mentions sur la protection de données personnelles.</a>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-secondary text-22 m-auto px-16">Envoyer</button>
+                </form>
+                <span class="text-12 mr-auto">*Obligatoire</span>
+            </section>
+            <section class="col-12 col-lg-6 col-xl-7 pl-lg-10 pt-10 pr-lg-0">
+                <div class="d-flex flex-wrap justify-content-between">
+                    <div class="col-12 col-lg-6 p-0 d-flex flex-column">
+                        <h2 class="font-weight-bold"><i class="icon icon-bureau-de-vente big align-middle mr-3"></i> Bureau de vente</h2>
+                        <p class="text-17 mt-6">
+                            31 rue de Rocambourt
+                            92160, Antony
+                        </p>
+                        <p class="text-17 my-6">
+                            Du mardi au vendredi de 14h à 19h
+                            Le samedi de 10h00 à 12h30
+                            et de 14h à 19h
+                        </p>
+                        <div class="my-6 my-lg-auto">
+                            <h2 class="font-weight-bold">Nous contacter</h2>
+                            <address class="mt-6">
+                                <a href="tel:+33800659361" class="btn btn-secondary text-22 text-center m-auto px-6">0800 659 361
+                                    <span class="text-12 d-block">Numéro vert gratuit</span>
+                                </a>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5 offset-lg-1 p-0">
+                        <h2 class="font-weight-bold"><i class="icon icon-acces big align-middle mr-3"></i> Accès</h2>
+                        <p class="text-17 mt-6">
+                            Rejoindre Paris et île-de-France&nbsp;&colon;
+                            <span class="d-block">&ndash; 25 minutes en voiture via l’A13</span>
+                            &ndash; 25 minutes en RER B depuis la Gare
+                            d‘Antony Rive Gauche (à 6 minutes à pied).
+                        </p>
+                        <p class="text-17 mt-6">
+                            <span class="text-nowrap">Circuler dans Antony et alentour&nbsp;&colon;</span>
+                            <span class="d-block">&ndash; A 10 minutes à pied du centre ville et des commerces</span>
+                            &ndash; A 850 mètres à pied du bus interne de la
+                            commune « Gare d"Antony Rive Gauche »
+                            BUS 265, ligne j et ligne V
+                        </p>
+                    </div>
+                </div>
+
+                <div class="overflow-hidden rounded text-center mt-6 address-map">
+                    <img src="./public/assets/img/plan.jpg" class="d-block w-100" alt="map">
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

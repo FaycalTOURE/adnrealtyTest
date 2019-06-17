@@ -1,0 +1,66 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+$fonts-sizes: 24 22 18 17 16 14 12;
+
+.text {
+  &-{
+    @each $size in $fonts-sizes {
+      &#{$size} {
+        @include font-size(#{$size}px);
+      }
+    }
+  }
+}
+
+address {
+  .btn-secondary {
+    border-radius: 40px;
+  }
+}
+
+.btn-secondary:hover {
+  color: $secondary;
+  background-color: #fff;
+  border-color: $secondary;
+}
+
+form {
+  label {
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.address-map {
+  cursor: pointer;
+  position: relative;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+  }
+  &:hover {
+    &::before {
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      width: 40px;
+      height: 40px;
+      transform: translate(-50%, -50%);
+      background-color: $white;
+      mask-image: url('../../public/assets/icons/loupe.svg');
+      mask-size: cover;
+    }
+    &::after {
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($black, 0.5);
+    }
+  }
+}

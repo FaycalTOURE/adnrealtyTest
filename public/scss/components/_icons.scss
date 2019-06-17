@@ -1,0 +1,25 @@
+$icons-list: 'bureau-de-vente' 'loupe' 'acces';
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  &.big {
+    width: 1.5em;
+    height: 1.5em;
+  }
+  &-{
+    @each $icon in $icons-list {
+      &#{$icon} {
+        background-color: $primary;
+        mask-image: url('../../public/assets/icons/#{$icon}.svg');
+        mask-size: cover;
+      }
+    }
+  }
+}
+
+

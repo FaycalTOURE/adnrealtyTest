@@ -1,0 +1,9 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .row {
+    width: 100% !important;
+  }
+
+  .blurry {
+    display: none !important;
+  }
+}

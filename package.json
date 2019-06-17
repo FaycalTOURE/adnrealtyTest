@@ -1,0 +1,28 @@
+{
+  "name": "adnreality",
+  "version": "1.0.0",
+  "description": "test integration",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Faycal TOURE",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-clean-css": "3.10.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-concat-css": "3.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-sass": "3.2.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-util": "^3.0.8"
+  },
+  "dependencies": {
+    "bootstrap": "4.3.1",
+    "normalize.css": "8.0.1"
+  }
+}
