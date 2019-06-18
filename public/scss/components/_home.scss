@@ -17,6 +17,10 @@ $fonts-sizes: 24 22 18 17 16 14 12;
 address {
   .btn-secondary {
     border-radius: 40px;
+    &:hover {
+      border-color: $white;
+      box-shadow: 0 -2px 19px rgba(102,102,102,.4);
+    }
   }
 }
 
